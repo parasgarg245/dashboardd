@@ -31,7 +31,7 @@ const matchSchema={
         venue : String,
         umpire1 : String,
         umpire2 : String,
-        umpire3 : Null
+        umpire3 : String
 
 }
 const Match=mongoose.model("Match",matchSchema)
@@ -40,7 +40,7 @@ var matches=[];
 
 app.get("/", function (req, res) {
     Match.find({}, function (err, matches) {
-
+        console.log(matches)
         res.render("test", {
             matches:matches
         });
