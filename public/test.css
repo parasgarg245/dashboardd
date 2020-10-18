@@ -1,0 +1,562 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  background-color: black;
+
+  color: white;
+}
+.nav {
+  width: 10rem;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav li {
+  display: block;
+  position: relative;
+}
+.nav li img {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 760px){
+  .nav{
+    position: relative;
+    margin-bottom: 10px;
+    display: none;
+  }
+}
+@media (min-width: 767px){
+  .nav{
+    display: block;
+  }
+
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  left: 10rem;
+  z-index: 1;
+  width: calc(100% - 10rem);
+  padding: 3rem 1.5rem 1.5rem 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+.content_item {
+  width: 100%;
+  margin: 1.5rem 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #080808;
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.content_item header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem 1.75rem;
+}
+.content_item header > span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.content_item header > span span {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+}
+.content_item header div {
+  width: 3rem;
+  height: 2.25rem;
+  position: relative;
+  top: -0.6rem;
+  right: -0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.75rem;
+}
+.content_item header div:hover {
+  background: rgba(255,255,255,0.03);
+}
+.content_item header div:hover path {
+  fill: rgba(255,255,255,0.7);
+}
+
+
+.content_item article {
+  flex: 1;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  position: relative;
+}
+.content_item article svg {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.content_item article p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.content_item article ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+.content_item article ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.5rem 0;
+  cursor: default;
+}
+.content_item article ul li h1{
+  font-family: 'Vollkorn', serif;
+  font-size: 1.2rem;
+
+}
+.content_item article ul li:first-child {
+  padding-top: 0;
+}
+.content_item article ul li div {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content_item article ul li div div {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 0.75rem;
+  background: black;
+  border-radius: 100%;
+}
+.content_item article ul li div strong {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.content_item article ul li div strong span {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.2);
+}
+.content_item article ul li > span {
+  display: none;
+}
+@media (max-width: 1280px) {
+  .content_item article ul li > span {
+    display: block;
+  }
+}
+@media (max-width: 890px) {
+  .content_item article ul li > span {
+    display: none;
+  }
+}
+.content_item article ul li a {
+  display: flex;
+  background: rgba(255,255,255,0.05);
+  padding: 0 0.35rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+}
+.content_item article ul li a svg {
+  position: relative;
+  top: 3px;
+  left: -1px;
+}
+
+.content_item:nth-child(1) {
+  width: calc((100% * 0.75) - 1.5rem);
+}
+@media (max-width: 1280px) {
+  .content_item:nth-child(1) {
+    width: 100%;
+  }
+}
+
+.content_item:nth-child(1) section div {
+  width: 60%;
+  background: rgba(255,0,102,0.7);
+}
+.content_item:nth-child(1) section div:before {
+  box-shadow: 0px 1px 10px 3px rgba(255,0,102,0.7);
+}
+.content_item:nth-child(2) {
+  width: calc((100% * 0.25) - 1.5rem);
+}
+@media (max-width: 1280px) {
+  .content_item:nth-child(2) {
+    width: 100%;
+  }
+}
+.content_item:nth-child(3),
+.content_item:nth-child(4),
+.content_item:nth-child(5),
+.content_item:nth-child(6),
+.content_item:nth-child(7) {
+  width: calc((100% * 0.2) - 1.5rem);
+}
+@media (max-width: 1280px) {
+  .content_item:nth-child(3),
+  .content_item:nth-child(4),
+  .content_item:nth-child(5),
+  .content_item:nth-child(6),
+  .content_item:nth-child(7) {
+    width: calc((100% * 0.5) - 1.5rem);
+  }
+}
+@media (max-width: 760px) {
+  .content_item:nth-child(3),
+  .content_item:nth-child(4),
+  .content_item:nth-child(5),
+  .content_item:nth-child(6),
+  .content_item:nth-child(7) {
+    
+    width: 100%;
+  }
+}
+.content_item:nth-child(3) em {
+  color: rgba(153,51,255,0.7);
+}
+.content_item:nth-child(3) section div {
+  width: 50%;
+  background: rgba(153,51,255,0.7);
+}
+.content_item:nth-child(3) section div:before {
+  box-shadow: 0px 1px 10px 3px rgba(153,51,255,0.7);
+}
+
+.content_item:nth-child(4) section div {
+  width: 60%;
+  background: rgba(255,0,255,0.7);
+}
+.content_item:nth-child(4) section div:before {
+  box-shadow: 0px 1px 10px 3px rgba(255,0,255,0.7);
+}
+
+.content_item:nth-child(5) section div {
+  width: 70%;
+  background: rgba(255,51,119,0.7);
+}
+.content_item:nth-child(5) section div:before {
+  box-shadow: 0px 1px 10px 3px rgba(255,51,119,0.7);
+}
+
+.content_item:nth-child(6) section div {
+  width: 80%;
+  background: rgba(204,0,102,0.7);
+}
+.content_item:nth-child(6) section div:before {
+  box-shadow: 0px 1px 10px 3px rgba(204,0,102,0.7);
+}
+
+.content_item:nth-child(7) section div {
+  width: 80%;
+  background: rgba(204,0,102,0.7);
+}
+.content_item:nth-child(7) section div:before {
+  box-shadow: 0px 1px 10px 3px rgba(204,0,102,0.7);
+}
+.content_item:nth-child(8),
+.content_item:nth-child(9),
+.content_item:nth-child(10) {
+  width: calc((100% / 3) - 1.5rem);
+}
+@media (max-width: 890px) {
+  .content_item:nth-child(8),
+  .content_item:nth-child(9),
+  .content_item:nth-child(10)
+   {
+    width: 100%;
+  }
+}
+
+
+
+.content_item:nth-child(12),
+.content_item:nth-child(13),
+.content_item:nth-child(14),
+.content_item:nth-child(15)
+ {
+  width: calc((100% / 2) - 1.5rem);
+}
+
+@media (max-width: 890px) {
+  .content_item:nth-child(12),
+  .content_item:nth-child(13),
+  .content_item:nth-child(14),
+  .content_item:nth-child(15)
+   {
+    width: 100%;
+  }
+}
+
+.content_item:nth-child(16){
+  width: calc(100%-1.5rem);
+}
+
+.head {
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 10rem;
+  z-index: 2;
+  width: calc(100% - 10rem);
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background: rgba(28,30,33,0.8);
+  border-bottom: 2px solid #18191a;
+}
+
+
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+ th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+ td{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  
+  font-family: 'Roboto', sans-serif;
+}
+.table {
+  width: 100%-1.5rem;
+  
+  margin-top: 
+}
+
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+/*
+  Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+  */
+  @media
+    only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: transparent;
+    }
+    
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 0;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    */
+    td:nth-of-type(1):before { content: "ID"; }
+    td:nth-of-type(2):before { content: "SEASON"; }
+    td:nth-of-type(3):before { content: "CITY"; }
+    td:nth-of-type(4):before { content: "DATE"; }
+    td:nth-of-type(5):before { content: "TEAM-1"; }
+    td:nth-of-type(6):before { content: "TEAM-2"; }
+    td:nth-of-type(7):before { content: "TOSS WINNER"; }
+    td:nth-of-type(8):before { content: "TOSS DEC."; }
+    td:nth-of-type(9):before { content: "RESULT"; }
+    td:nth-of-type(10):before { content: "WINNER"; }
+     td:nth-of-type(11):before { content: "WIN BY RUN"; }
+      td:nth-of-type(12):before { content: "WIN BY WICKET"; }
+       td:nth-of-type(13):before { content: "PLAYER OF MATCH"; }
+        td:nth-of-type(14):before { content: "VENUE"; }
+         td:nth-of-type(15):before { content: "UMPIRE-1"; }
+          td:nth-of-type(16):before { content: "UMPIRE-2"; }
+  }
+  @media
+    only screen 
+    and (max-width: 1280px), (min-device-width: 1280px) 
+    and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: transparent;
+    }
+    
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 0;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    */
+    td:nth-of-type(1):before { content: "ID"; }
+    td:nth-of-type(2):before { content: "SEASON"; }
+    td:nth-of-type(3):before { content: "CITY"; }
+    td:nth-of-type(4):before { content: "DATE"; }
+    td:nth-of-type(5):before { content: "TEAM-1"; }
+    td:nth-of-type(6):before { content: "TEAM-2"; }
+    td:nth-of-type(7):before { content: "TOSS WINNER"; }
+    td:nth-of-type(8):before { content: "TOSS DEC."; }
+    td:nth-of-type(9):before { content: "RESULT"; }
+    td:nth-of-type(10):before { content: "WINNER"; }
+     td:nth-of-type(11):before { content: "WIN BY RUN"; }
+      td:nth-of-type(12):before { content: "WIN BY WICKET"; }
+       td:nth-of-type(13):before { content: "PLAYER OF MATCH"; }
+        td:nth-of-type(14):before { content: "VENUE"; }
+         td:nth-of-type(15):before { content: "UMPIRE-1"; }
+          td:nth-of-type(16):before { content: "UMPIRE-2"; }
+  }
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

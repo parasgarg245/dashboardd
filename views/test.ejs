@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><img src="https://sportzwiki.com/wp-content/uploads/2020/02/RCB-new-logo.jpg"></li>
+            <li><img src="https://i.cdn.newsbytesapp.com/images/l147_16611600178365.jpg"></li>
+            <li><img
+                    src="https://cdn.wionews.com/sites/default/files/styles/story_page/public/2018/09/11/39782-untitled%25252520design-14-20180128052612.jpg">
+            </li>
+            <li><img src="https://www.dailyvedas.com/wp-content/uploads/2014/04/Kings-XI-Punjab-HD-Logo.jpg"></li>
+            <li><img src="https://www.betrallyindia.com/wp-content/uploads/2020/03/kolkata-knight-riders-logo.jpg"></li>
+            <li><img
+                    src="https://static.asianetnews.com/images/01egj6dk7s0d5rbr6y47xnanw6/fotojet--2--jpg_1200x630xt.jpg">
+            </li>
+            <li><img src="https://i.pinimg.com/originals/95/b2/ec/95b2ec1904c1bc4cb4b7b2cc4a4a9e86.jpg"></li>
+            <li><img src="https://odishanewsinsight.com/wp-content/uploads/2015/04/Rajasthan-Royals1.jpg"></li>
+        </ul>
+    </div>
+    <div class="content js-content">
+        <div class="content_item">
+            <header><span>IPL 2020<span>Total since 2016</span></span>
+
+            </header>
+            <article>
+                <img
+                    src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2018/04/08/33887-ipl-official-twitter-account1.jpg?itok=alCgF7G6">
+            </article>
+
+        </div>
+        <div class="content_item">
+            <header><span>TEAMS</span>
+            </header>
+            <article>
+                <ul>
+                    <li>
+                        <h1>CHENNAI SUPER KINGS</h1>
+
+                    </li>
+                    <li>
+                        <h1>KOLKATA KNIGHT RIDERS</h1>
+
+                    </li>
+                    <li>
+                        <h1>MUMBAI INDIANS</h1>
+                    </li>
+                    <li>
+                        <h1>SUNRISERS HYDERABAD</h1>
+
+                    </li>
+                    <li>
+                        <h1>
+                            ROYAL CHALLENGERS BANGALORE
+                        </h1>
+                    </li>
+                    <li>
+                        <h1>KINGS XI PUNJAB</h1>
+
+                    </li>
+                    <li>
+                        <h1>DELHI CAPITALS SQUAD</h1>
+
+                    </li>
+                    <li>
+                        <h1>RAJASTHAN ROYALS</h1>
+
+                    </li>
+                </ul>
+            </article>
+
+        </div>
+        <div class="content_item">
+            <h1 style="font-size: 40px; font-family: 'Bebas Neue', cursive;text-align: center;"><span>Total Teams</span>
+            </h1>
+            <h2
+                style="font-size: 35px; padding: 2px; text-align: center; font-family: 'Bebas Neue', cursive; color: #f2f3f4;">
+                <span>+14</span></h2>
+
+        </div>
+        <div class="content_item">
+            <h1 style="font-size: 38px; font-family: 'Bebas Neue', cursive;text-align: center;"><span>Total
+                    Venues</span></h1>
+            <h2 style="font-size: 32px; padding-left: 2px; text-align: center; font-family: 'Bebas Neue', cursive; ">+31
+            </h2>
+        </div>
+        <div class="content_item">
+            <h1 style="font-size: 38px; font-family: 'Bebas Neue', cursive; text-align: center;"><span>Total
+                    session</span></h1>
+            <h2 style="font-size: 32px; padding: 2px; text-align: center; font-family: 'Bebas Neue', cursive;">+636</h2>
+        </div>
+        <div class="content_item">
+            <h1 style="font-size: 38px; font-family: 'Bebas Neue', cursive; text-align: center;"><span>Total Win
+                    Runs</span></h1>
+            <h2 style="font-size: 32px;text-align: center; font-family: 'Bebas Neue', cursive;">+8702</h2>
+        </div>
+        <div class="content_item">
+            <h1 style="font-size: 38px; font-family: 'Bebas Neue', cursive;text-align: center;"><span>Win By
+                    Wicket</span></h1>
+            <h2
+                style="font-size: 32px; padding: 2px; text-align: center; font-family: 'Bebas Neue', cursive; color: #f2f3f4;">
+                <span>+2145</span></h2>
+
+        </div>
+        <div class="content_item">
+            <header><span>Toss Decision</span>
+
+            </header>
+
+            <div id="piechart_3d" style="width: 400px; height: 280px; background-color: #080808;"></div>
+
+        </div>
+        <div class="content_item">
+            <header><span>Winners Count</span>
+            </header>
+            <div id="donutchart" style="width: 400px; height: 280px;"></div>
+
+        </div>
+        <div class="content_item">
+            <header><span>VENUES</span>
+
+            </header>
+            <div id="piechart" style="width: 400px; height: 280px;"></div>
+
+        </div>
+        <div class="content_item">
+
+            <h1 style="font-family: 'Piedra', cursive; font-size: 45px;">DASHBOARD</h1>
+            <div class="tbl-header">
+
+            </div>
+
+        </div>
+
+        <div class="content_item">
+            <header><span>Toss Winners<span></span></span>
+            </header>
+            <div id="piechart_4d" style="width: 560px; height: 300px;"></div>
+
+        </div>
+        <div class="content_item">
+            <header><span>Team Perfo.</span>
+            </header>
+            <div id="curve_chart" style="width: 560px; height: 300px;"></div>
+
+        </div>
+        <div class="content_item">
+
+            <div id="last" style="width: 560px; height: 300px;"></div>
+
+        </div>
+        <div class="content_item">
+            <img style="width: 560px; height: 300px;"
+                src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/08/07/917968-ipl.jpg">
+
+        </div>
+    </div>
+    <div class="content_item">
+
+    </div>
+
+    <div class="js-fake-scroll"></div>
+
+
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Bat', 549221],
+                ['Field', 730723],
+
+            ]);
+            var data2 = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['2008', 58],
+                ['2009', 57],
+                ['2010', 60],
+                ['2011', 72],
+                ['2012', 74],
+                ['2013', 76],
+                ['2014', 60],
+                ['2015', 57],
+                ['2016', 60],
+                ['2017', 59],
+            ]);
+            var data3 = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Abu Dhabi', 14098],
+                ['Ahmedabad', 24156],
+                ['Bangalore', 132861],
+                ['Bloemfontein', 4018],
+                ['Cape Town', 14063],
+                ['Centurion', 24108],
+                ['Chandigarh', 92582],
+                ['Chennai', 96554],
+                ['Chuttack', 14086],
+                ['Delhi', 120771],
+                ['Dharamsala', 18103],
+                ['Durban', 30135],
+                ['East London', 6027],
+                ['Hyderabad', 98649],
+                ['Indore', 10073],
+                ['Jaipur', 66363],
+                ['Johannesburg', 16072],
+                ['Kanpur', 8066],
+                ['Kimberley', 6027],
+                ['Kochi', 10055],
+                ['Kolkata', 122783],
+                ['Mumbai', 171049],
+                ['Nagpur', 6030],
+                ['Port', 14063],
+                ['Pune', 64455],
+                ['Raipur', 12088],
+                ['Rajkot', 20165],
+                ['Ranchi', 14097],
+                ['Sharjah', 12084],
+                ['Visakhapatnam', 22165],
+            ]);
+            var data4 = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Chennai Super Kings', 66],
+                ['Deccan Chargers', 43],
+                ['Delhi Daredevils', 72],
+                ['Gujrat Lions', 15],
+                ['Kings XI Punjab', 68],
+                ['Kochi Tuskers Kerala', 8],
+                ['Kolkata Knight Riders', 78],
+                ['Mumbai Indians', 85],
+                ['Pune Warriors', 20],
+                ['Rajasthan Royals', 63],
+                ['Rising Pune Supergiants', 6],
+                ['Royal Challengers Bangalore', 70],
+                ['Sunrise Hyderabad', 35]
+            ]);
+            var data5 = google.visualization.arrayToDataTable([
+                ['Count Of Sessions', 'Winners'],
+                ['Chennai Super Kings', 79],
+                ['Deccan Chargers', 29],
+                ['Delhi Daredevils', 62],
+                ['Gujrat Lions', 13],
+                ['Kings XI Punjab', 70],
+                ['Kochi Tuskers Kerala', 6],
+                ['Kolkata Knight Riders', 77],
+                ['Mumbai Indians', 92],
+                ['Pune Warriors', 12],
+                ['Rajasthan Royals', 63],
+                ['Rising Pune Supergiants', 10],
+                ['Royal Challengers Bangalore', 73],
+                ['Sunrise Hyderabad', 42]
+            ]);
+            var data6 = google.visualization.arrayToDataTable([
+                ['Sum of season', 'result'],
+                ['No Result', 6041],
+                ['Normal', 1259812],
+                ['Tie', 14091]
+
+            ]);
+
+
+            var options = {
+                title: '',
+                is3D: true,
+                backgroundColor: '#101010',
+                titleTextStyle: {
+                    color: ('white'),
+                },
+                textStyle: {
+                    color: 'white',
+                },
+                legend: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                }
+
+            };
+
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+
+
+
+
+            var options2 = {
+                title: '',
+                pieHole: 0.4,
+                backgroundColor: '#101010',
+                titleTextStyle: {
+                    color: ('white'),
+                },
+                legend: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                }
+
+            };
+
+            var chart2 = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart2.draw(data2, options2);
+
+            var options3 = {
+                title: '',
+                is3D: true,
+                backgroundColor: '#101010',
+                titleTextStyle: {
+                    color: ('white'),
+                },
+                legend: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                }
+
+            };
+
+            var chart3 = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart3.draw(data3, options3);
+
+            var options4 = {
+                title: 'Tos Winners',
+                is3D: true,
+                backgroundColor: '#101010',
+                titleTextStyle: {
+                    color: ('white'),
+                },
+                legend: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                }
+
+            };
+
+            var chart4 = new google.visualization.PieChart(document.getElementById('piechart_4d'));
+            chart4.draw(data4, options4);
+
+
+            var options5 = {
+                title: 'Team Performance',
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                },
+                backgroundColor: '#101010',
+                titleTextStyle: {
+                    color: ('white'),
+                },
+                hAxis: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                },
+                vAxis: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                }
+
+            };
+
+
+            var chart5 = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart5.draw(data5, options5);
+
+
+            var options6 = {
+                title: 'Result',
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                },
+                backgroundColor: '#101010',
+                titleTextStyle: {
+                    color: ('white'),
+                },
+                hAxis: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                },
+                vAxis: {
+                    textStyle: {
+                        color: 'white'
+                    }
+                }
+
+            };
+
+
+            var chart6 = new google.visualization.LineChart(document.getElementById('last'));
+
+            chart6.draw(data6, options6);
+
+
+
+        }
+
+
+
+        let scrollTop = 0
+        let easedScrollTop = 0
+        let $content = document.querySelector('.js-content')
+        let $fakeScroll = document.querySelector('.js-fake-scroll')
+
+        document.addEventListener('scroll', () => {
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop
+            console.log("scrollTop", scrollTop)
+        })
+
+        function resize() {
+            $fakeScroll.style.height = $content.clientHeight + 'px'
+        }
+
+        window.addEventListener('resize', resize)
+
+        function update() {
+            requestAnimationFrame(update)
+            easedScrollTop += (scrollTop - easedScrollTop) * 0.1
+            $content.style.transform = 'translateY(' + (easedScrollTop * -1) + 'px) translateZ(0)'
+        }
+
+        resize()
+        update()
+
+
+
+
+
+
+        $(window).resize(function () {
+            drawChart();
+
+        });
+
+
+    </script>
+</body>
+
+</html>
